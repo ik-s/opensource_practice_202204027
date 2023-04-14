@@ -13,7 +13,7 @@ def division(x, y):
     return x/y
 
 # input two number
-def PutNumber():
+def InputNumber():
     global x, y
     print("First Number")
     x = int(input())
@@ -28,7 +28,7 @@ def main():
         print("0: exit, 1: plus, 2: minus, 3: multiplycation, 4: division")
         check = int(input())
         if check >= 1 or check <= 4:
-            PutNumber()
+            InputNumber()
 	    if check == 1:
 	       	print("answer : ", plus(x,y))
             elif check == 2:
